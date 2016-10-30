@@ -1,0 +1,17 @@
+REGEDIT
+; .REG 파일은 SETUP 프로그램에 사용될 수 있습니다.
+;   SETUP 프로그램을 사용할 수 없는 경우 아래 항목이
+;   CWinApp::RegisterShellFileTypes 및 COleObjectFactory::UpdateRegistryAll을
+;   호출하여 InitInstance에 자동으로 등록됩니다.
+
+
+HKEY_CLASSES_ROOT\MalwFinder.Application = MalwFinder Application
+
+
+HKEY_CLASSES_ROOT\MalwFinder.Application\CLSID = {6E731DD3-F537-4058-BD48-EB8B1A4DFD6E}
+
+HKEY_CLASSES_ROOT\CLSID\{6E731DD3-F537-4058-BD48-EB8B1A4DFD6E} = MalwFinder Application
+HKEY_CLASSES_ROOT\CLSID\{6E731DD3-F537-4058-BD48-EB8B1A4DFD6E}\ProgId = MalwFinder.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{6E731DD3-F537-4058-BD48-EB8B1A4DFD6E}\LocalServer32 = MalwFinder.EXE

@@ -1,0 +1,126 @@
+
+
+- Windows 2000
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x004 DeviceObject     : Ptr32 _DEVICE_OBJECT
+   +0x008 PowerFlags       : Uint4B
+   +0x00c Dope             : Ptr32 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x010 ExtensionFlags   : Uint4B
+   +0x014 DeviceNode       : Ptr32 Void
+   +0x018 AttachedTo       : Ptr32 _DEVICE_OBJECT
+   +0x01c FileObjectList   : _LIST_ENTRY
+
+
+-- Wdinsows XP ( X86 )
+
+0: kd> dt _DEVOBJ_EXTENSION
+nt!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x004 DeviceObject     : Ptr32 _DEVICE_OBJECT
+   +0x008 PowerFlags       : Uint4B
+   +0x00c Dope             : Ptr32 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x010 ExtensionFlags   : Uint4B
+   +0x014 DeviceNode       : Ptr32 Void
+   +0x018 AttachedTo       : Ptr32 _DEVICE_OBJECT
+   +0x01c StartIoCount     : Int4B
+   +0x020 StartIoKey       : Int4B
+   +0x024 StartIoFlags     : Uint4B
+   +0x028 Vpb              : Ptr32 _VPB
+
+
+-- Wdinsows XP ( X64 )
+
+1: kd> dt _DEVOBJ_EXTENSION
+nt!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x008 DeviceObject     : Ptr64 _DEVICE_OBJECT
+   +0x010 PowerFlags       : Uint4B
+   +0x018 Dope             : Ptr64 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x020 ExtensionFlags   : Uint4B
+   +0x028 DeviceNode       : Ptr64 Void
+   +0x030 AttachedTo       : Ptr64 _DEVICE_OBJECT
+   +0x038 StartIoCount     : Int4B
+   +0x03c StartIoKey       : Int4B
+   +0x040 StartIoFlags     : Uint4B
+   +0x048 Vpb              : Ptr64 _VPB
+
+
+
+
+
+-- Windows 2003 ( X86 )
+
+
+0: kd> dt _DEVOBJ_EXTENSION
+nt!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x004 DeviceObject     : Ptr32 _DEVICE_OBJECT
+   +0x008 PowerFlags       : Uint4B
+   +0x00c Dope             : Ptr32 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x010 ExtensionFlags   : Uint4B
+   +0x014 DeviceNode       : Ptr32 Void
+   +0x018 AttachedTo       : Ptr32 _DEVICE_OBJECT
+   +0x01c StartIoCount     : Int4B
+   +0x020 StartIoKey       : Int4B
+   +0x024 StartIoFlags     : Uint4B
+   +0x028 Vpb              : Ptr32 _VPB
+
+-- Windows 2003 ( X64 )
+
+1: kd> dt _DEVOBJ_EXTENSION
+nt!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x008 DeviceObject     : Ptr64 _DEVICE_OBJECT
+   +0x010 PowerFlags       : Uint4B
+   +0x018 Dope             : Ptr64 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x020 ExtensionFlags   : Uint4B
+   +0x028 DeviceNode       : Ptr64 Void
+   +0x030 AttachedTo       : Ptr64 _DEVICE_OBJECT
+   +0x038 StartIoCount     : Int4B
+   +0x03c StartIoKey       : Int4B
+   +0x040 StartIoFlags     : Uint4B
+   +0x048 Vpb              : Ptr64 _VPB
+
+
+
+-- Windows Vista( X86 )
+
+0: kd> dt nt!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x004 DeviceObject     : Ptr32 _DEVICE_OBJECT
+   +0x008 PowerFlags       : Uint4B
+   +0x00c Dope             : Ptr32 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x010 ExtensionFlags   : Uint4B
+   +0x014 DeviceNode       : Ptr32 Void
+   +0x018 AttachedTo       : Ptr32 _DEVICE_OBJECT
+   +0x01c StartIoCount     : Int4B
+   +0x020 StartIoKey       : Int4B
+   +0x024 StartIoFlags     : Uint4B
+   +0x028 Vpb              : Ptr32 _VPB
+
+
+
+-- Windows Vista( X64 )
+
+0: kd> dt _DEVOBJ_EXTENSION
+ntdll!_DEVOBJ_EXTENSION
+   +0x000 Type             : Int2B
+   +0x002 Size             : Uint2B
+   +0x008 DeviceObject     : Ptr64 _DEVICE_OBJECT
+   +0x010 PowerFlags       : Uint4B
+   +0x018 Dope             : Ptr64 _DEVICE_OBJECT_POWER_EXTENSION
+   +0x020 ExtensionFlags   : Uint4B
+   +0x028 DeviceNode       : Ptr64 Void
+   +0x030 AttachedTo       : Ptr64 _DEVICE_OBJECT
+   +0x038 StartIoCount     : Int4B
+   +0x03c StartIoKey       : Int4B
+   +0x040 StartIoFlags     : Uint4B
+   +0x048 Vpb              : Ptr64 _VPB
+
+

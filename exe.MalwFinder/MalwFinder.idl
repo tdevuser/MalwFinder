@@ -1,0 +1,29 @@
+// MalwFinder.idl : MalwFinder.exe에 대한 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(MalwFinder.tlb)를 생성합니다.
+
+[ uuid(D3AD2452-224E-4A7C-B254-F3677089B581), version(1.0) ]
+library MalwFinder
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CMalwFinderDoc의 기본 디스패치 인터페이스
+	
+	[ uuid(26891905-8CFD-4142-9594-396DAFCB5980) ]
+	dispinterface IMalwFinder
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CMalwFinderDoc의 클래스 정보
+	
+	[ uuid(6E731DD3-F537-4058-BD48-EB8B1A4DFD6E) ]
+	coclass MalwFinder
+	{
+		[default] dispinterface IMalwFinder;
+	};
+};

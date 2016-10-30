@@ -1,0 +1,7 @@
+DIRS= \
+     WXP \
+     Win7 \
+     Win8 \
+	 Win10  
+ 
+     

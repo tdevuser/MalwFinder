@@ -1,0 +1,39 @@
+
+TARGETNAME=MalwFind
+TARGETTYPE=DRIVER
+DRIVERTYPE=FS
+
+MSC_WARNING_LEVEL=/W3
+
+INCLUDES=$(INCLUDES);$(CRT_INC_PATH);
+
+
+!IF "$(DRVLANG)" == "ko"
+C_DEFINES = $(C_DEFINES) -D_LANG_KO
+TARGETPATH=..\Bin\Win7\ko
+!ELSE IF "$(DRVLANG)" == "en" 
+C_DEFINES = $(C_DEFINES) -D_LANG_EN
+TARGETPATH=..\Bin\Win7\en
+!ENDIF
+
+
+TARGETLIBS= $(DDK_LIB_PATH)\ntoskrnl.lib  \
+            $(DDK_LIB_PATH)\ntstrsafe.lib \
+            $(SDK_LIB_PATH)\uuid.lib  
+
+
+SOURCES= ..\NHCAFlt.c \
+		 ..\MalwFind_FastIoFunc.c \
+		 ..\MalwFind_FileFunc.c \
+		 ..\MalwFind_Process.c \
+		 ..\MalwFind_Acctl.c \
+		 ..\MalwFind_Command.c \
+		 ..\MalwFind_LogFunc.c  \
+		 ..\MalwFind_RegFunc.c \
+		 ..\MalwFind_Util.c \
+		 ..\MalwFind_DispHook.c \
+		 ..\MalwFind.rc
+         
+         
+
+

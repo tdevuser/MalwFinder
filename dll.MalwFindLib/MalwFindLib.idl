@@ -1,0 +1,10 @@
+// MalwFindLib.idl : type library source for MalwFindLib.dll
+// This file will be processed by the MIDL compiler to produce the
+// type library (MalwFindLib.tlb).
+
+[ uuid(60B1BBA0-F0A6-4721-8B9B-531D06E02F1D), version(1.0) ]
+library MalwFindLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
